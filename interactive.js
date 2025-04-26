@@ -92,22 +92,30 @@ function menuMinuman() {
   console.log("2. Es Jeruk          - Rp. 6.000");
   console.log("3. Teh Tarik         - Rp. 8.000");
   console.log("4. Aqua              - Rp. 4.000");
-  console.log(" ");
-  console.log("0. kembali ke kategori");
-  console.log(" ");
-  console.log(" ");
+   console.log("5. Americano         - Rp. 12.000");
+   console.log("6. Cafe Latte        - Rp. 19.000");
+   console.log("7. Caramel Machiato  - Rp. 18.000");
+   console.log("8. Vietnam Drip      - Rp. 11.000");
+   console.log(" ");
+   console.log("0. kembali ke kategori");
+   console.log(" ");
+   console.log(" ");
 
-  rl.question(" Anda ingin minum apa? ", (item) => {
-    if (item === "1") konfirmasiItem("Es Teh", 5000);
-    else if (item === "2") konfirmasiItem("Es Jeruk", 6000);
-    else if (item === "3") konfirmasiItem("Teh Tarik", 8000);
-    else if (item === "4") konfirmasiItem("Aqua", 4000);
-    else if (item === "0") pilihKategori();
-    else {
-      console.log("❌ Pilihan tidak valid");
-      menuMinuman();
-    }
-  });
+   rl.question(" Anda ingin minum apa? ", (item) => {
+     if (item === "1") konfirmasiItem("Es Teh", 5000);
+     else if (item === "2") konfirmasiItem("Es Jeruk", 6000);
+     else if (item === "3") konfirmasiItem("Teh Tarik", 8000);
+     else if (item === "4") konfirmasiItem("Aqua", 4000);
+     else if (item === "5") konfirmasiItem("Americano", 12000);
+     else if (item === "6") konfirmasiItem("Cafe Latte", 19000);
+     else if (item === "7") konfirmasiItem("Caramel Machiato", 18000);
+     else if (item === "8") konfirmasiItem("Vietnam Drip", 11000);
+     else if (item === "0") pilihKategori();
+     else {
+       console.log("❌ Pilihan tidak valid");
+       menuMinuman();
+     }
+   });
 }
 
 function menuSnack() {
